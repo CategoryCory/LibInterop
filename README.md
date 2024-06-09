@@ -31,5 +31,5 @@ To set up this project, you will need to build the libraries. Follow the steps b
   SDK installed. Change to the `libs/cs` directory and follow these steps:
   - `dotnet build -c Release`
 - Rust: To build the Rust library, you will need [Rust](https://www.rust-lang.org/tools/install) installed.
-  Change to the `libs/rust` directory and follow these steps:
+  Change to the `libs/rust/complex_rust` directory and follow these steps:
   - `cargo build --release`
