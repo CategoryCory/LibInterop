@@ -7,30 +7,24 @@
 #endif
 
 #include <cmath>
+#include "complex_class.h"
 
-class ComplexCpp
+ComplexCpp::ComplexCpp(double re, double im) : real(re), imag(im) { }
+
+double ComplexCpp::phase_rad() const
 {
-private:
-    double real;
-    double imag;
-public:
-    ComplexCpp(double re, double im) : real(re), imag(im) {}
+    return atan2(imag, real);
+}
 
-    double phase_rad() const
-    {
-        return atan2(imag, real);
-    }
+double ComplexCpp::phase_deg() const
+{
+    return phase_rad() * 180.0 / M_PI;
+}
 
-    double phase_deg() const
-    {
-        return phase_rad() * 180.0 / M_PI;
-    }
-
-    double magnitude() const 
-    {
-        return sqrt(pow(real, 2) + pow(imag, 2));
-    }
-};
+double ComplexCpp::magnitude() const
+{
+    return sqrt(pow(real, 2) + pow(imag, 2));
+}
 
 extern "C"
 {
