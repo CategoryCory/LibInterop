@@ -14,7 +14,7 @@ def simple_lib_example(lib_name: str) -> None:
         Returns:
             None
     '''
-    lib_dir: Path = Path(__file__).parent / 'lib'
+    lib_dir: Path = Path(__file__).parent.parent / 'lib'
     full_lib_path: Path = lib_dir / lib_name
 
     try:
