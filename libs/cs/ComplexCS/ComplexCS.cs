@@ -1,6 +1,6 @@
 namespace ComplexCS;
 
-class ComplexCS
+public class ComplexCS
 {
     private double _real;
     private double _imag;

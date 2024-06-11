@@ -28,6 +28,6 @@ extern "C"
     
     EXPORT double CALLING_CONVENTION magnitude(const Complex* c)
     {
-        return sqrt(pow(c->real, 2) + (c->imag, 2));
+        return sqrt(pow(c->real, 2) + pow(c->imag, 2));
     }
 }
